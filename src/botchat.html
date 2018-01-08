@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Botchat</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/d3a6f5894b.js"></script>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="../css/botchat.css">
+    <script type="text/javascript" src="../js/botchat.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div id="chatlaunch" onClick="open_chatBox();">
+                <i class="fa fa-comments" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5 col-sm-12 col-xs-12 col-lg-offset-8 col-md-offset-7">
+                <div class="panel panel-primary chatBotBox" id="chatBox">
+                    <div class="panel-heading">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <label>Inbox</label>
+                        <div class="pull-right">
+                            <i class="fa fa-times" aria-hidden="true" onClick="close_chatBox();"></i>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <ul class="chat">
+                            <li class="left clearfix">
+                                <span class="chat-img pull-left">
+                                    <img src="../images/boy.png" alt="User Avatar" class="img-circle avatar" />
+                                </span>
+                                <div class="chat-body clearfix">
+                                    <div class="header">
+                                        <strong class="primary-font">Duggu</strong>
+                                        <small class="pull-right text-muted chat-time">
+                                            <span class="glyphicon glyphicon-time "></span>12 mins ago
+                                        </small>
+                                    </div>
+                                    <p>
+                                        Hi, Piggy
+                                        <br> How are you ?
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="right clearfix">
+                                <span class="chat-img pull-right">
+                                    <img src="../images/girl.png" alt="User Avatar" class="img-circle avatar" />
+                                </span>
+                                <div class="chat-body clearfix">
+                                    <div class="header">
+                                        <small class=" text-muted chat-time">
+                                            <span class="glyphicon glyphicon-time"></span>13 mins ago
+                                        </small>
+                                        <strong class="pull-right primary-font">Piggy</strong>
+                                    </div>
+                                    <p>
+                                        Hi Duggu..
+                                        <br> I am fine.. You say..
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="left clearfix">
+                                <span class="chat-img pull-left">
+                                    <img src="../images/boy.png" alt="User Avatar" class="img-circle avatar" />
+                                </span>
+                                <div class="chat-body clearfix">
+                                    <div class="header">
+                                        <strong class="primary-font">Duggu</strong>
+                                        <small class="pull-right text-muted chat-time">
+                                            <span class="glyphicon glyphicon-time"></span>14 mins ago
+                                        </small>
+                                    </div>
+                                    <p>
+                                        How izz ur lyf going.. ?
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="right clearfix">
+                                <span class="chat-img pull-right">
+                                    <img src="../images/girl.png" alt="User Avatar" class="img-circle avatar" />
+                                </span>
+                                <div class="chat-body clearfix">
+                                    <div class="header">
+                                        <small class=" text-muted chat-time">
+                                            <span class="glyphicon glyphicon-time"></span>15 mins ago
+                                        </small>
+                                        <strong class="pull-right primary-font">Piggy</strong>
+                                    </div>
+                                    <p>
+                                        Everything is going fine..
+                                        <br> Btw how is your new Job ?
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="left clearfix">
+                                <span class="chat-img pull-left">
+                                    <img src="../images/boy.png" alt="User Avatar" class="img-circle avatar" />
+                                </span>
+                                <div class="chat-body clearfix">
+                                    <div class="header">
+                                        <strong class="primary-font">Duggu</strong>
+                                        <small class="pull-right text-muted chat-time">
+                                            <span class="glyphicon glyphicon-time"></span>14 mins ago
+                                        </small>
+                                    </div>
+                                    <p>
+                                        New Job is awesome..
+                                        <br> Here are lots of things to learn ..
+                                        <br> Everyday I learn new things which gives me satisfaction..
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="fa fa-smile-o fa-lg" aria-hidden="true"></i>
+                            </span>
+                            <input id="btn-input" type="text" class="form-control" placeholder="Send your message here...">
+                            <span class="input-group-addon">
+                                <i class="fa fa-paper-plane-o fa-lg" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
